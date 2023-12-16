@@ -24,6 +24,7 @@ async function lanciaVeicoloSpaziale (){
         console.log('Attenzione:',lancio2)
         const lancio3 = await caricaModulo('C');
         console.log('Attenzione:',lancio3)
+        console.log("Veicolo spaziale pronto per il lancio!")
     } catch (error) {
         console.log(error)
         
