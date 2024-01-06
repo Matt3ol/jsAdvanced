@@ -8,7 +8,7 @@
 
 const ul = document.querySelector("ul");
 
-const ulParent = ul.parentElement;
+const ulParent = ul.parentElement.innerText;
 
 console.log("elemento padre di ul", ulParent);
 
@@ -16,10 +16,10 @@ const ulChild = ul.children[1];
 
 console.log("secondo elemento figlio di ul", ulChild);
 
-const secondLi = ulChild.nextElementSibling;
+const secondLi = ulChild.nextElementSibling.innerText;
 
 console.log("elemento fratello successivo del secondo li", secondLi);
 
-const anotherLi = ulChild.previousElementSibling;
+const anotherLi = ulChild.previousElementSibling.innerText;
 
-console.log('elemento fratello precedente del secondo li',anotherLi)
+console.log("elemento fratello precedente del secondo li", anotherLi);
